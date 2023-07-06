@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ宠物系列-躲开老鼠</title>
+</head>
+
+<body>
+    <!--  -->
+    <p>QQ宠物系列-躲开老鼠</p>
+    <p>点击鼠标左键控制人物跳跃躲开老鼠，获得积分(左边是人物，右边是老鼠)</p>
+    <p>当前获得积分<span class="grade">0</span></p>
+    <button class="start-game" onclick="startGame()">开始游戏</button>
+    <button class="reset-game" hidden onclick="resetGame(500)">重新开始游戏</button>
+    <!-- canvas画布位置 -->
+    <canvas id="canvas" width="300" height="150"></canvas>
+</body>
+<style>
+    #canvas {
+        background: gray;
+    }
+</style>
+<script src="game.js"></script>
+<script src="jumper.js"></script>
+<script src="silder.js"></script>
+<script src="index.js"></script>
+</html>
